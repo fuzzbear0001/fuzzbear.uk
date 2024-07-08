@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes rainbow-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow-wave {
+  /* Apply gradient to text */
+  background: linear-gradient(
+    to right,
+    #ff1cf7,
+    #ff705b,
+    #5ea2ef,
+    #00b7fa,
+    #6fee8d,
+    #ff72e1
+  );
+  /* Clip gradient to text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Make text transparent where gradient is applied */
+  color: transparent;
+  /* Ensure animation affects only the background */
+  background-size: 600% 100%;
+  /* Apply animation */
+  animation: rainbow-wave 1s ease infinite;
+  /* Additional styling as needed */
+  font-weight: 600;
+  display: inline-block;
+}
