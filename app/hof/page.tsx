@@ -50,7 +50,7 @@ export default function hof() {
               </div>
               <p>
                 Adrian thinks he’s bad and thinks he can fight when he’s just an
-                autistic coon
+                autistic fuck
               </p>
             </CardBody>
           </Card>
@@ -114,6 +114,27 @@ export default function hof() {
                 <h4 className="font-bold text-large">Leon</h4>
               </div>
               <p>Annoying cunt but a nice cunt</p>
+            </CardBody>
+          </Card>
+          <Card className="py-4">
+            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
+              <div className="flex items-center justify-center">
+                <Avatar
+                  isBordered
+                  radius="sm"
+                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot 2024-07-09 011803.png"
+                  className="w-20 h-20 text-large"
+                />
+              </div>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+              <div className="flex items-center justify-center">
+                <h4 className="font-bold text-large">Rainey</h4>
+              </div>
+              <p>
+                Short litte midget can suck dick while standing, but pretty
+                nice, my ex AGAIN, VERYYYY severely autistic.
+              </p>
             </CardBody>
           </Card>
         </div>

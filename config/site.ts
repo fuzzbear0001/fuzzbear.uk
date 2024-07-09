@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Fuzzbear",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "A fullstack developer and content creator",
   navItems: [
     {
       label: "Home",

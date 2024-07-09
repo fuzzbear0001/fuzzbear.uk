@@ -18,25 +18,6 @@ export default function Home() {
         <h1 className={title({ color: "green" })}>Fuzzbear&nbsp;</h1>
         <br />
         <h1 className={title()}>A FullStack Developer</h1>
-        <h2 className={subtitle({ class: "mt-4" })}>
-          I am the owner of{" "}
-          <div className="flex justify-center">
-            <Image
-              isBlurred
-              width={90}
-              src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/9d885obrx29c4tkqd7u8mz2kw80x.png"
-              alt="NextUI Album Cover"
-              className="m-5"
-            />
-            <Image
-              isBlurred
-              width={90}
-              src="https://chatit.site/_next/image?url=%2Fstatic%2Ffavicon.ico&w=64&q=75"
-              alt="Chatit Logo"
-              className="m-5"
-            />
-          </div>
-        </h2>
       </div>
 
       <div className="flex gap-3">
@@ -46,7 +27,7 @@ export default function Home() {
           href={siteConfig.links.tiktok}
         >
           <TiktokIcon size={20} />
-          Tiktok
+          TikTok
         </Link>
         <Link
           isExternal
@@ -78,7 +59,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">Javascript</p>
+                    <p className="text-md">JavaScript</p>
                     <Chip isDisabled color="success">
                       4 years
                     </Chip>
@@ -95,7 +76,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">Nodejs</p>
+                    <p className="text-md">Node.JS</p>
                     <Chip isDisabled color="success">
                       4 years
                     </Chip>
@@ -112,7 +93,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">ExpressJs</p>
+                    <p className="text-md">express.js</p>
                     <Chip isDisabled color="success">
                       4 years
                     </Chip>
@@ -147,7 +128,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">NextJs</p>
+                    <p className="text-md">Next.js</p>
                     <Chip isDisabled color="success">
                       2 years
                     </Chip>
@@ -164,7 +145,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">Html</p>
+                    <p className="text-md">HTML 5</p>
                     <Chip isDisabled color="success">
                       2 years
                     </Chip>
@@ -181,7 +162,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">Css</p>
+                    <p className="text-md">CSS 6</p>
                     <Chip isDisabled color="success">
                       2 years
                     </Chip>
@@ -198,7 +179,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">Typescript</p>
+                    <p className="text-md">TypeScript</p>
                     <Chip isDisabled color="success">
                       1 year
                     </Chip>
