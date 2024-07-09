@@ -162,7 +162,7 @@ export default function Home() {
                     width={40}
                   />
                   <div className="flex flex-col">
-                    <p className="text-md">CSS 6</p>
+                    <p className="text-md">CSS</p>
                     <Chip isDisabled color="success">
                       2 years
                     </Chip>
