@@ -137,6 +137,48 @@ export default function hof() {
               </p>
             </CardBody>
           </Card>
+      <Card className="py-4">
+            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
+              <div className="flex items-center justify-center">
+                <Avatar
+                  isBordered
+                  radius="sm"
+                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Snapchat-988279208.jpg"
+                  className="w-20 h-20 text-large"
+                />
+              </div>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+              <div className="flex items-center justify-center">
+                <h4 className="font-bold text-large">Crowbar cryptic</h4>
+              </div>
+              <p>
+              He’s very autistic. And likes belly button sex. His boyfriend is tigther 
+              then a Venus fly trap. And he likes sucking oranges whilst thinking about Lloyds balls 
+              </p>
+            </CardBody>
+          </Card>
+        <Card className="py-4">
+            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
+              <div className="flex items-center justify-center">
+                <Avatar
+                  isBordered
+                  radius="sm"
+                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Snapchat-440354375.jpg"
+                  className="w-20 h-20 text-large"
+                />
+              </div>
+            </CardHeader>
+            <CardBody className="overflow-visible py-2">
+              <div className="flex items-center justify-center">
+                <h4 className="font-bold text-large">Big spoom</h4>
+              </div>
+              <p>
+              He’s a pro gymastic ( not ), when he goes to the gym his arse spreads 8 inches vertical and
+                horisontily ( i cant be asked to search how to spell ) and he is super autistic.
+              </p>
+            </CardBody>
+          </Card>
         </div>
       </div>
     </div>
