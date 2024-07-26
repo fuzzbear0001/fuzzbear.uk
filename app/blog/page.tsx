@@ -1,9 +1,10 @@
-import { title } from "@/components/primitives";
-
-export default function BlogPage() {
-  return (
-    <div>
-      <h1 className={title()}>Blog</h1>
-    </div>
-  );
+import {useEffect} from 'react'
+export default function redirect() {
+    useEffect(() => {
+        window.location.assign('https://www.z2u.com/items-9912888/snapchat-accounts-1million-score-original-email-auto-delivery.html?seller=249432')
+    })
+    return(
+        <>
+        </>
+    )
 }
