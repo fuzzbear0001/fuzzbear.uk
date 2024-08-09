@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react'
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
@@ -9,7 +9,7 @@ import cards from "@/json/hof.json";
 
 
 export default function Hof() {
-  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   // Function to filter cards based on the search term
   const filteredCards = cardsData.filter((card) =>
