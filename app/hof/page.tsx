@@ -2,7 +2,9 @@ import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
 import {SearchIcon} from "./SearchIcon";
+import {Input} from "@nextui-org/input";
 import cards from "@/json/hof.json"; 
+
 
 export default function Hof() {
   return (
