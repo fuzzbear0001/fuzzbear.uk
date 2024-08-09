@@ -1,184 +1,39 @@
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
+import cards from "@/json/hof.json"; 
 
-export default function hof() {
+export default function Hof() {
   return (
     <div>
       <h1 className="rainbow-wave text-3xl lg:text-4xl">Hall Of Autism</h1>
       <div className="mt-4">
         <div className="gap-2 grid grid-cols-2 sm:grid-cols-2">
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot 2024-07-09 004546.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h6 className={title({ color: "yellow", size: "xsmall" })}>
-                  Ivelin
-                </h6>
-              </div>
-              <p>
-                Always here for me and a great person, but again, like everyone,
-                he is high on the spectrum.
-              </p>
-            </CardBody>
-          </Card>
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot 2024-07-09 005256.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h6 className={title({ color: "yellow", size: "xsmall" })}>
-                  Adrian
-                </h6>
-              </div>
-              <p>
-                Adrian thinks he’s bad and thinks he can fight when he’s just an
-                autistic fuck
-              </p>
-            </CardBody>
-          </Card>
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot%202024-07-09%20001739.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h6 className={title({ color: "yellow", size: "xsmall" })}>
-                  John
-                </h6>
-              </div>
-              <p>
-                John is a crazy autistic bitch but help's me code so i don't
-                care.
-              </p>
-            </CardBody>
-          </Card>
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot%202024-07-08%20220610.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h4 className="font-bold text-large">Macey</h4>
-              </div>
-              <p>
-                Is very high on the spectrum and is a crazy bitch but she's a
-                ginger and that make's up for it!
-              </p>
-            </CardBody>
-          </Card>
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot 2024-07-09 005149.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h4 className="font-bold text-large">Leon</h4>
-              </div>
-              <p>Annoying cunt but a nice cunt</p>
-            </CardBody>
-          </Card>
-          <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Screenshot 2024-07-09 011803.png"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h4 className="font-bold text-large">Rainey</h4>
-              </div>
-              <p>
-                Short litte midget can suck dick while standing, but pretty
-                nice, my ex AGAIN, VERYYYY severely autistic.
-              </p>
-            </CardBody>
-          </Card>
-      <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Snapchat-988279208.jpg"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h4 className="font-bold text-large">Crowbar cryptic</h4>
-              </div>
-              <p>
-              He’s very autistic. And likes belly button sex. His boyfriend is tigther 
-              then a Venus fly trap. And he likes sucking oranges whilst thinking about Lloyds balls 
-              </p>
-            </CardBody>
-          </Card>
-        <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
-              <div className="flex items-center justify-center">
-                <Avatar
-                  isBordered
-                  radius="sm"
-                  src="https://pub-310a2360dab34aa8a9c722a4c2cbe6dc.r2.dev/Snapchat-440354375.jpg"
-                  className="w-20 h-20 text-large"
-                />
-              </div>
-            </CardHeader>
-            <CardBody className="overflow-visible py-2">
-              <div className="flex items-center justify-center">
-                <h4 className="font-bold text-large">Big spoom</h4>
-              </div>
-              <p>
-              He’s a pro gymastic ( not ), when he goes to the gym his arse spreads 8 inches vertical and
-                horisontily ( i cant be asked to search how to spell ) and he is super autistic.
-              </p>
-            </CardBody>
-          </Card>
+          {cards.map((card, index) => (
+            <Card className="py-4" key={index}>
+              <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
+                <div className="flex items-center justify-center">
+                  <Avatar
+                    isBordered
+                    radius="sm"
+                    src={card.avatar}
+                    className="w-20 h-20 text-large"
+                  />
+                </div>
+              </CardHeader>
+              <CardBody className="overflow-visible py-2">
+                <div className="flex items-center justify-center">
+                  <h6 className={title({ 
+                    color: card.gold ? "yellow" : "black", 
+                    size: "xsmall" 
+                  })}>
+                    {card.name}
+                  </h6>
+                </div>
+                <p>{card.description}</p>
+              </CardBody>
+            </Card>
+          ))}
         </div>
       </div>
     </div>
