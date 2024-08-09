@@ -4,6 +4,8 @@ import { Avatar } from "@nextui-org/avatar";
 import {SearchIcon} from "./SearchIcon";
 import {Input} from "@nextui-org/input";
 import cards from "@/json/hof.json"; 
+import { useState } from "react";
+
 
 
 export default function Hof() {
