@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
-import {SearchIcon} from "./SearchIcon";
-import {Input} from "@nextui-org/input";
-import cards from "@/json/hof.json"; 
-
-
+import { SearchIcon } from "./SearchIcon";
+import { Input } from "@nextui-org/input";
+import cards from "@/json/hof.json";
 
 export default function Hof() {
   const [searchTerm, setSearchTerm] = useState("");
 
   // Function to filter cards based on the search term
-  const filteredCards = cardsData.filter((card) =>
+  const filteredCards = cards.filter((card) =>
     card.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
