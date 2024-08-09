@@ -1,3 +1,4 @@
+"use client"
 import { useState } from 'react';
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
