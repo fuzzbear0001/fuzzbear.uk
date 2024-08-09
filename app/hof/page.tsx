@@ -23,12 +23,13 @@ export default function Hof() {
               </CardHeader>
               <CardBody className="overflow-visible py-2">
                 <div className="flex items-center justify-center">
-                  <h6 className={title({ 
-                    color: card.gold ? "yellow" : "black", 
-                    size: "xsmall" 
-                  })}>
-                    {card.name}
-                  </h6>
+                  {card.gold ? (
+                    <h6 className={title({ color: "yellow", size: "xsmall" })}>
+                      {card.name}
+                    </h6>
+                  ) : (
+                    <h4 className="font-bold text-large">{card.name}</h4>
+                  )}
                 </div>
                 <p>{card.description}</p>
               </CardBody>
