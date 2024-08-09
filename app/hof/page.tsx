@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
+import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/react";
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
