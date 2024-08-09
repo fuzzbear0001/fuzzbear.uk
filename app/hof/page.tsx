@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Pagination } from "@nextui-org/pagination";
 import { title } from "@/components/primitives";
-import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
 import { SearchIcon } from "./SearchIcon";
 import { Input } from "@nextui-org/input";
@@ -13,23 +13,24 @@ export default function Hof() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4;
 
-  // Function to filter cards based on the search term
   const filteredCards = cards.filter((card) =>
     card.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  // Calculate the current page's items
   const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
   const currentItems = filteredCards.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm]);
+
   return (
     <div>
       <h1 className="rainbow-wave text-3xl lg:text-4xl text-center">Hall Of Autism</h1>
       
-      {/* Centered Search Input */}
       <div className="flex justify-center mt-4">
         <Input
           label="Search!"
@@ -96,11 +97,11 @@ export default function Hof() {
         </div>
       </div>
 
-      {/* Pagination Component */}
       <div className="flex justify-center mt-6">
         <Pagination
           total={totalPages}
           initialPage={1}
+          page={currentPage}
           onChange={(page) => setCurrentPage(page)}
         />
       </div>
