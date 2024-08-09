@@ -1,6 +1,6 @@
-"use client"
-import { useState } from 'react';
-import {Pagination, PaginationItem, PaginationCursor} from "@nextui-org/pagination";
+"use client";
+import { useState } from "react";
+import { Pagination } from "@nextui-org/pagination";
 import { title } from "@/components/primitives";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
@@ -10,10 +10,19 @@ import cards from "@/json/hof.json";
 
 export default function Hof() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4;
 
   // Function to filter cards based on the search term
   const filteredCards = cards.filter((card) =>
     card.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Calculate the current page's items
+  const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+  const currentItems = filteredCards.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
   );
 
   return (
@@ -58,7 +67,7 @@ export default function Hof() {
 
       <div className="mt-4">
         <div className="gap-2 grid grid-cols-2 sm:grid-cols-2">
-          {filteredCards.map((card, index) => (
+          {currentItems.map((card, index) => (
             <Card className="py-4" key={index}>
               <CardHeader className="pb-0 pt-2 px-4 flex items-center justify-center">
                 <div className="flex items-center justify-center">
@@ -85,6 +94,15 @@ export default function Hof() {
             </Card>
           ))}
         </div>
+      </div>
+
+      {/* Pagination Component */}
+      <div className="flex justify-center mt-6">
+        <Pagination
+          total={totalPages}
+          initialPage={1}
+          onChange={(page) => setCurrentPage(page)}
+        />
       </div>
     </div>
   );
