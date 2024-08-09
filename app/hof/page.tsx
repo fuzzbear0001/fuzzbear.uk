@@ -23,7 +23,7 @@ export default function Hof() {
       {/* Centered Search Input */}
       <div className="flex justify-center mt-4">
         <Input
-          label="Search"
+          label="Search!"
           isClearable
           radius="lg"
           classNames={{
