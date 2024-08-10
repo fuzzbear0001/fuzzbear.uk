@@ -1,4 +1,4 @@
-mport { Link } from "@nextui-org/link";
+import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Image } from "@nextui-org/image";
 import { Code } from "@nextui-org/code";
